@@ -133,7 +133,7 @@ function rollDice(){
     console.log("Roll dice was clicked");
     myDice.spin(event);
     //myDice.roll(event);
-    feedback("info", "Successfully roll.");
+    feedback("good", "Successfully rolled.");
     rollsLeft--;
     document.getElementById("rolls-remaining").innerHTML = rollsLeft;
   } else if (rollsLeft == 0){
