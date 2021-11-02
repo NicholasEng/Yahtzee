@@ -89,6 +89,8 @@ class Scorecard {
    *
    */
   loadScores(objectVersion){
+    let that = this;
+    that.clearInputs();
     this.#categoryElements.forEach(scoreElement => {
       scoreElement.value = objectVersion[scoreElement.id];
       if (objectVersion[scoreElement.id] != ""){
@@ -107,6 +109,8 @@ class Scorecard {
    *
    */
   toObject(){
+    let that = this;
+    that.clearInputs();
     let game = {};
     this.#categoryElements.forEach(scoreElement => {
       game[scoreElement.id] = scoreElement.value;
