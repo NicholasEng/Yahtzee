@@ -1,0 +1,44 @@
+table, th, td {
+  border: 1px solid black;
+}
+
+.die {
+  background-color: #edf6f9;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.good {
+  background-color: #caffbf;
+}
+
+.bad {
+  background-color: #ffadad;
+}
+
+.info {
+  background-color: #9bf6ff;
+}
+
+.reserved {
+  background-color: grey;
+}
+
+.total {
+  text-align: center;
+  font-weight: bold;
+  color:black;
+}
+
+input:disabled {
+  background-color: lightgrey;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+input:enabled {
+  background-color: white;
+}

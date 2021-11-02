@@ -1,0 +1,31 @@
+{
+  "name": "yahtzee-grader",
+  "version": "1.0.0",
+  "description": "npm install puppeteer jest jest-puppeteer --save-dev npm init",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^27.2.5",
+    "jest-puppeteer": "^4.4.0",
+    "puppeteer": "^5.3.1"
+  },
+  "jest": {
+    "preset": "jest-puppeteer",
+    "globals": {
+      "URL": "http://localhost:3000"
+    },
+    "testMatch": [
+      "**/test/**/*.test.js"
+    ],
+    "verbose": true,
+    "testTimeout": 20000
+  },
+  "scripts": {
+    "test": "jest || exit 0",
+    "start": "node server.js"
+  },
+  "author": "Justin Gohde"
+}
